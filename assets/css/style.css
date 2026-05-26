@@ -543,3 +543,4 @@ nav{
         gap: 15px;
     }
 }
+*{overflow-x : hidden}
