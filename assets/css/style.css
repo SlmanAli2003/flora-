@@ -1,0 +1,545 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Inter;
+}
+nav{
+    width: 100vw;
+    height: 90px;
+    background-color: #EFF8FF;
+    padding: 0 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+
+    ul{
+        display: flex;
+        gap: 30px;
+        list-style: none; 
+        font-weight: 500;
+        color: #222222;
+        li{
+            cursor: pointer;
+        }
+    }
+    .login{
+        width: 135px;
+        height: 38px;
+        background-color:  #025595;
+        color: #F5F5F5;
+        font-size: 14px;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+    }
+    .bars{
+        border: none;
+        background: none;
+        cursor: pointer;
+        display: none;
+    }
+}
+
+.hero{
+    height: 100vh;
+    padding: 122px 0;
+    background-color: #EFF8FF;
+    background-image: url(./../img/modern-residential-building-transformed\ 1.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+
+    h1{
+        margin: 0 70px;
+        max-width: 549px;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 80px;
+        color: #222222;
+    }
+    .desrciption{
+        max-width: 423px;
+        margin: 20px 70px 50px;
+        color: #22222280;
+        line-height: 26px;
+    }
+
+    .info{
+        max-width: 866px;
+        min-height: 100px;
+        margin: 0 70px ;
+        padding: 20px 58px;
+        border-radius: 16px;
+        background-color: #FFFFFFC7;
+        backdrop-filter: blur(16px);
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+
+        .card{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .circle{
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background-color: #02559512;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            h2{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #222222;
+            }
+
+            p{
+                color: #22222280;
+            }
+        }
+    }
+}
+
+.How_it_Works{
+    margin: 94px 70px;
+    h2{
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 39px;
+        color: #222222;
+    }
+
+    .description2{
+        font-style: Regular;
+        font-size: 15px;
+        line-height: 26px;
+        color: #22222280;
+    }
+
+    .cards{
+        /* width: calc( ( 1226px * 100vw ) / 1366px); */
+        width: 89.751vw;
+        margin-top: 56px;
+        display: flex;
+        gap: 43px;
+
+        .card{
+            /* width:calc( ( 380px * 100vw ) / 1366px); */
+            width: 27.8184vw;
+            .content{
+                padding: 30px 40px 80px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            h3{
+                
+                font-weight: 600;
+                font-style: Semi Bold;
+                font-size: 22px;
+            }
+
+            p{
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+        .card2{
+        background-color: #025595;
+        color: #FFFFFF;
+        border-radius: 15px;               
+        }
+        
+    }
+}
+
+.dream_home{
+    .image{
+        img{width:100%;}
+        position: relative;
+        .pp{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            background-color:#00000080;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 58px;
+            color: #FFFFFF;
+            h2{
+                font-weight: 700;
+                font-style: Bold;
+                font-size: 70px;
+                line-height: 56px;
+                text-align: center;
+            }
+            p{
+                font-size: 30px;
+                line-height: 26px;
+                text-align: center;
+            }
+            opacity: 0;
+            /* visibility: hidden; */
+        }
+    }
+
+}
+/* .dream_home .image:hover .pp{
+        opacity: 1;
+    
+} */
+.dream_home .image:hover {
+    cursor: pointer;
+        .pp{
+            opacity: 1;
+        }
+    
+}
+
+.Most_Trending{
+    margin: 94px 70px;
+    h2{
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 39px;
+    line-height: 56px;
+    color: #222222;
+    }
+
+    .description{
+        font-style: Regular;
+        font-size: 15px;
+        line-height: 26px;
+        color: #22222280;
+    }
+
+    .home_cards{
+        margin: 56px auto;
+        width: 89.7510vw;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px 0;
+        .card{
+            width: 27.9648vw;
+            padding: 20px 20px ;
+            border: 1.5px solid #22222233;
+            box-shadow: 0px 0px 10px #0000001A;
+            border-radius: 10px;
+            .home{
+                width: 25.0366vw;
+                border-radius: 10px;
+            }
+            .price{               
+                font-weight: 600;
+                font-style: Semi Bold;
+                font-size: 18px;
+                line-height: 28px;
+                color: #025595;
+                margin-top: 16px;
+            }
+            .information{
+                font-weight: 600;
+                font-style: Semi Bold;
+                font-size: 18px;
+                line-height: 29px;
+                color: #222222;
+            }
+            .location{
+                margin: 38px 0px 22px 0px;
+                img{
+                    width: 23.5px;
+                    height: 24px;
+                    color: #222222;
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #222222;
+                }
+                display: flex;
+                gap: 10.5px;
+            }
+        }
+        
+    }
+}
+
+
+.Best_Real_Estate_Deals{
+    h2{
+        margin-left: 70px;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 39px;
+        line-height: 56px;
+        color: #222222; 
+    }
+    p{
+        margin-left: 70px;  
+        font-style: Regular;
+        font-size: 15px;
+        line-height: 26px;
+        color: #22222280;
+    }
+    ul{
+        margin: 56px 0 56px 70px;
+        font-size: 18px;
+        display: flex;
+        gap: 50px;
+        list-style: none; 
+        color: #222222;
+        li{
+            cursor: pointer;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #025595;
+        }       
+    }
+    .home_photos{
+        display: flex;
+        justify-content: space-evenly;
+        .home{
+            position: relative;
+            img{
+                width: 27.73vw;
+            }
+            .buttons{
+                background-color: #22222266;
+                color: #FFFFFF;
+                font-size: 12px;
+                border-radius: 5px;
+                border: 1px solid #FFFFFF;
+                cursor: pointer;
+            }
+            .button1{
+                width: 79px;
+                height: 26px;
+                position: absolute;
+                top: 14px;
+                left: 14px;
+            }
+            .button2{
+                width: 30px;
+                height: 26px;
+                position: absolute;
+                top: 14px;
+                left: 100px;
+            }
+        }
+    }
+}
+.Best_Real_Estate_Deals ul li:hover{
+    color:#025595;
+}
+
+.fotter_sectios{
+    margin: 129px 0 0 70px;
+    display: flex;
+    gap: 60px;
+    .logo{
+        width: 25.6654vw;
+        p{
+            margin-top: 25.92px;
+            font-style: Regular;
+            font-size: 16px;
+            line-height: 26px;
+            color: #22222280;
+        }
+    }
+    .Service , .About , .Our_Location{
+        h3{
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 20px;
+            letter-spacing: 2%;
+            color: #222222;
+        }
+        ul{list-style: none;}
+        li{
+            margin-bottom: 16px;
+            font-size: 16px;
+            letter-spacing: 2%;
+            color: #222222;
+        }
+    }
+    .Our_Location{
+        p{
+            margin-bottom: 16px ;
+            letter-spacing: 2%;
+            color: #222222;
+        }
+        img{
+            margin-right: 16px;
+            cursor: pointer;
+        }
+    }
+}
+
+.line{
+    border: 1px solid  #2222221A;
+    margin-bottom: 16px;
+}
+
+.end{
+    margin: 0 0 16px 70px;
+    display: flex;
+    gap:44.46vw ;
+    p{letter-spacing: 2%;}
+    .p2p3{
+        display: flex;
+        gap: 29.82px;
+    }
+}
+
+@media screen and (max-width : 992px){
+    nav{
+        padding: 0 20px;
+        ul , .login{
+            display: none;
+        }
+        .bars{
+            display: block;
+        }
+    }
+    .hero{
+        h1{
+            font-size: 35px;
+            line-height: 46px;
+            margin: 0 20px;
+        }
+
+        .desrciption{
+            margin: 20px 20px 50px;
+        }
+
+        .info{
+            margin: 0;
+            padding: 20px;
+            border-radius: 0;
+            flex-direction: column;
+        }
+    }
+
+    .How_it_Works{
+        margin: 64px 20px;
+        .cards{
+            margin: 64px auto;
+            min-width: 260px;
+            max-width: 320px;
+            display: block;
+            .card{
+                .content{
+                    padding: 15px 17.5px 28px;
+                    min-width: 260px;
+                    max-width: 320px;
+                }
+            }
+            .card2{
+                min-width: 260px;
+                max-width: 320px;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .Most_Trending{
+        margin: 0 0;
+        h2{
+            margin: 64px 0 0 20px;
+            font-size: 30px;
+        }
+        .description{
+            line-height: 22px;
+            margin-left: 20px;
+        }
+        .home_cards{
+            margin-top: 42px;
+            width: 100vw;
+            flex-direction: column;
+            gap: 20px 0 ;
+            align-items: center;
+
+            .card{
+                width: 88.8888vw;
+                padding: 20px 16px ;
+                border-radius: 6px;
+                .home{
+                    width: 80vw;
+                    border-radius: 6px;
+                }
+                .information{
+                    font-size: 16px;
+                    line-height: 27px;
+                    color: #222222;
+                }
+                .location{
+                    margin: 38px 0px 22px 0px;
+                    img{
+                        width: 18px;
+                        height: 18px;  
+                    }
+                    p{
+                        font-size: 12px;  
+                    }
+                }
+            }
+        }
+    }
+
+    .Best_Real_Estate_Deals{
+        h2{
+            margin-left: 19.92px;
+            font-size: 30px;
+            line-height: 100%;
+        }
+        p{
+            margin-left: 19.92px;  
+            line-height: 22px;
+        }
+        ul{
+            margin: 42px 0 40px 20px;
+            gap: 20px;
+            list-style: none; 
+            font-size: 16px;
+            li{
+                cursor: pointer;
+            }       
+        }
+        .home_photos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .home{
+                img{
+                    width: 88.88vw;
+                }
+            }
+        }
+    }
+
+    .fotter_sectios{
+        margin: 64px 0 0 20.92px;
+        flex-direction: column;
+        .logo{width: 100%;}
+    }
+    .end{
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
